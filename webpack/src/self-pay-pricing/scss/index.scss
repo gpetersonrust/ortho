@@ -1,0 +1,24 @@
+.m1p4-6 > .x-row-inner, .m1oz-8 > .x-row-inner , .m1oz-6 > .x-row-inner {
+     flex-direction: column !important;
+     transform: translateX(16px);
+
+    //  if screen size is lg or larger then flex-direction is row use pure scss
+    @screen lg {
+        flex-direction: row !important;
+        transform: translateX(0);
+    }
+}
+
+
+.m1p4-8 > .x-row-inner > *:nth-child(2n - 1), .m1oz-8 > .x-row-inner > *:nth-child(2n - 1) {
+    flex-basis: auto !important;
+    
+     
+@apply  w-[85%] my-4 mx-auto lg:mx-0  max-w-[820px];
+}
+
+.m1p4-g.x-anchor, .m1oz-g.x-anchor{
+    @apply block lg:inline-flex w-[85%] lg:w-auto mx-auto; 
+
+    
+}
